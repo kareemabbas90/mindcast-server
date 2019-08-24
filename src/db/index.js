@@ -1,9 +1,8 @@
+    
 const mongoose = require('mongoose');
 const { DATABASE_URL } = require('../config/environment');
 
-// mongoose.connect(DATABASE_URL, { useNewUrlParser: true });
-mongoose.connect(config.DB,{ useNewUrlParser: true }));
-
+mongoose.connect(DATABASE_URL, { useNewUrlParser: true });
 
 mongoose.Promise = global.Promise;
 
